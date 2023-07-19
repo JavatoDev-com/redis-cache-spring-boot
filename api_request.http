@@ -1,0 +1,18 @@
+##FILTERATION API WITH LIST ITEMS
+GET http://localhost:8080/api/v1/country/search?countryIds=10
+
+###GET ALL
+GET http://localhost:8080/api/v1/country
+
+###GET BY ID
+GET http://localhost:8080/api/v1/country/4
+
+### CREATE COUNTRY
+POST http://localhost:8080/api/v1/country
+Content-Type: application/json
+
+{
+  "name": "CA",
+  "code": "+922",
+  "capital": "New SS"
+}

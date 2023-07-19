@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    username: root
+    password: password
+    url: jdbc:mysql://127.0.0.1:3306/device-data-api-db
+    driver-class-name: com.mysql.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+    properties:
+      hibernate:
+        ddl-auto: none
+        naming_strategy: org.hibernate.cfg.ImprovedNamingStrategy
+    show-sql: true
+    database: mysql
+  cache:
+    type: redis
+    cache-names: country
+  data:
+    redis:
+      host: 127.0.0.1
+      port: 6379
+  main:
+    allow-bean-definition-overriding: true
